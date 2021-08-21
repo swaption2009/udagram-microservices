@@ -1,7 +1,11 @@
 set_env.sh
 aws-auth-cm.yaml
+
 kubectl
 kubectl.sha256
 
-deployment/env-secret.yaml
 .idea/
+
+deployment/aws-secret.yaml
+deployment/env-secret.yaml
+deployment/env-configmap.yaml
