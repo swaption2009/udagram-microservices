@@ -15,16 +15,16 @@ spec:
         service: udagram-frontend
     spec:
       containers:
-        - image: swaption2009/udagram-frontend
+        - image: swaption2009/udagram-frontend:latest
           name: udagram-frontend
           imagePullPolicy: Always
           ports:
             - containerPort: 80
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "250m"
+              memory: "128Mi"
+              cpu: "500m"
             limits:
               memory: "1024Mi"
-              cpu: "500m"
+              cpu: "1000m"
       restartPolicy: Always
