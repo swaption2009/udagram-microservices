@@ -5,7 +5,7 @@ metadata:
     service: udagram-reverseproxy
   name: udagram-reverseproxy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       service: udagram-reverseproxy
@@ -23,8 +23,8 @@ spec:
           resources:
             requests:
               memory: "128Mi"
-              cpu: "500m"
+              cpu: "200m"
             limits:
               memory: "1024Mi"
-              cpu: "1000m"
+              cpu: "2500m"
       restartPolicy: Always
